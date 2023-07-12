@@ -13,7 +13,7 @@ body{
     background: #27374D;
 }
 
-#logo{
+.logo{
     -webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -58,78 +58,78 @@ img{
     height: 30%;
 }
 
-.L-box{
+.R-box{
     position: relative;
     width: 380px;
-    height: 420px;
+    height: 770px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
 }
 
-.L-box::before{
+.R-box::before{
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 760px;
     background: linear-gradient(0deg,transparent,transparent,
-    #526D82,#526D82,#526D82);
+    #526D82,#526D82,#526D82,#526D82,#526D82);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 10s linear infinite;
+    animation: animate 6s linear infinite;
 }
 
-.L-box::after{
+.R-box::after{
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 760px;
     background: linear-gradient(0deg,transparent,transparent,
-    #526D82,#526D82,#526D82);
+    #526D82,#526D82,#526D82,#526D82,#526D82);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 10s linear infinite;
-    animation-delay: -5s;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
 }
 
-.L-borderLine{
+.R-borderLine{
     position: absolute;
     top: 0;
     inset: 0;
 }
 
-.L-borderLine::before{
+.R-borderLine::before{
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 760px;
     background: linear-gradient(0deg,transparent,transparent,
-    #DDE6ED,#DDE6ED,#DDE6ED);
+    #DDE6ED,#DDE6ED,#DDE6ED,#DDE6ED,#DDE6ED);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 10s linear infinite;
-    animation-delay: -2.5s;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
 }
 
-.L-borderLine::after{
+.R-borderLine::after{
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 760px;
     background: linear-gradient(0deg,transparent,transparent,
-    #DDE6ED,#DDE6ED,#DDE6ED);
+    #DDE6ED,#DDE6ED,#DDE6ED,#DDE6ED,#DDE6ED);
     z-index: 1;
     transform-origin: bottom right;
-    animation: animate 10s linear infinite;
-    animation-delay: -7.5s;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
 }
 
 @keyframes animate{
@@ -141,7 +141,7 @@ img{
     }
 }
 
-.L-box form{
+.R-box form{
     position: absolute;
     inset: 4px;
     background: #9DB2BF;
@@ -152,20 +152,20 @@ img{
     flex-direction: column;
 }
 
-.L-box form h2{
+.R-box form h2{
     color: #fff;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
 }
 
-.L-box form .L-inputBox{
+.R-box form .R-inputBox{
     position: relative;
     width: 300px;
     margin-top: 35px;
 }
 
-.L-box form .L-inputBox input{
+.R-box form .R-inputBox input{
     position: relative;
     width: 100%;
     padding: 20px 10px 10px;
@@ -179,7 +179,7 @@ img{
     z-index: 10;
 }
 
-.L-box form .L-inputBox span{
+.R-box form .R-inputBox span{
     position: absolute;
     left: 0;
     padding: 20px 0px 10px;
@@ -190,14 +190,14 @@ img{
     transition: 0.5s;
 }
 
-.L-box form .L-inputBox input:valid ~ span,
-.L-box form .L-inputBox input:focus ~ span{
+.R-box form .R-inputBox input:valid ~ span,
+.R-box form .R-inputBox input:focus ~ span{
     color: #fff;
     font-size: 0.75em;
     transform: translateY(-34px);
 }
 
-.L-box form .L-inputBox i{
+.R-box form .R-inputBox i{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -210,29 +210,62 @@ img{
     pointer-events: none;
 }
 
-.L-box form .L-inputBox input:valid ~ i,
-.L-box form .L-inputBox input:focus ~ i{
+.R-box form .R-inputBox input:valid ~ i,
+.R-box form .R-inputBox input:focus ~ i{
     height: 44px;
 }
 
-.L-box form .L-links{
-    display: flex;
-    justify-content: space-between;
+.R-box form .R-inputBox1{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
 }
 
-.L-box form .L-links a{
-    margin: 10px 0;
-    font-size: 0.75em;
-    color: #8f8f8f;
-    text-decoration: none;
+.R-box form .R-inputBox1 input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
 }
 
-.L-box form .L-links a:hover,
-.L-box form .L-links a:nth-child(2){
-    color: #fff;
+.R-inputBox1 .R-select-box select {
+    border: none;
+    border-bottom: 1px solid #8f8f8f;
+    background: transparent;
+    height: 50px;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
-.L-box form input[type="submit"]{
+.R-inputBox1 .R-select-box select:hover{
+    border: none;
+    border-bottom: 1px solid #8f8f8f;
+    background: transparent;
+    height: 50px;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.R-box form input[type="submit"]{
     border: none;
     outline: none;
     padding: 9px 25px;
@@ -245,6 +278,6 @@ img{
     cursor: pointer;
 }
 
-.L-box form input[type="submit"]:active{
+.R-box form input[type="submit"]:active{
     opacity: 0.8;
 }

@@ -11,19 +11,19 @@ function Login() {
             <span className="L-borderLine"></span>
             <form action="#" method="post">
                 <h2>Login</h2>
-                <div className="inputBox">
+                <div className="L-inputBox">
                     <input type="text" required="required" />
                     <span>아이디</span>
                     <i></i>
                 </div>
-                <div className="inputBox">
+                <div className="L-inputBox">
                     <input type="password" required="required" />
                     <span>비밀번호</span>
                     <i></i>
                 </div>
-                <div className="links">
+                <div className="L-links">
                     <a href="#">아이디/비밀번호 찾기</a>
-                    <a href="#">회원가입</a>
+                    <a href="./registration.jsx">회원가입</a>
                 </div>
                 <input type="submit" value="로그인" />
             </form>
