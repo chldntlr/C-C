@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './style.css';
 
 function Registration() {
+
+    const [isTeamSelectDisabled, setIsTeamSelectDisabled] = useState(true);
+
+    const handleCompanyNumberChange = (event) => {
+        const companyNumber = event.target.value;
+        if (companyNumber !== "") {
+            setIsTeamSelectDisabled(false);
+        } else {
+            setIsTeamSelectDisabled(true);
+        }
+    };
+
     return (
         <div>
             <a className="logo" href="#">
@@ -38,13 +50,13 @@ function Registration() {
                         <i></i>
                     </div>
                     <div className="R-inputBox">
-                        <input type="text" required name="companyNumber" />
+                        <input type="text" required name="companyNumber" onChange={handleCompanyNumberChange} />
                         <span>회사 부여 번호</span>
                         <i></i>
                     </div>
                     <div className="R-inputBox1">
                         <div className="R-select-box">
-                            <select id="team" required disabled>
+                            <select id="team" required disabled={isTeamSelectDisabled}>
                             <option value="">회사 팀</option>
                             <option value="A">A팀</option>
                             <option value="B">B팀</option>
