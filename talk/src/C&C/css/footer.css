@@ -1,7 +1,7 @@
-.tab-bar{
+.nav{
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 10%);
     background-color: #27374D;
     padding: 20px 50px;
     box-sizing: border-box;

@@ -1,10 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import './style.css';
 
 const People = () => {
     return (
         <>
+            <Helmet>
+                <script src="https://kit.fontawesome.com/f48f31764d.js" crossorigin="anonymous"></script>
+            </Helmet>
+
             <header className="header">
                 <h1 className="header-title">친구</h1>
                 <div className="header-icons">
