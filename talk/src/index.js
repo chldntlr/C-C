@@ -5,12 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import Login from './C&C/login';
-import Registraion from './C&C/registration';
+import Registration from './C&C/registration';
+import People from './C&C/people';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Registraion />
+    <People />
   </React.StrictMode>
 );
 

@@ -1,0 +1,133 @@
+.tab-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #27374D;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.tab-bar__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.tab-bar__tab--selected{
+    position: relative;
+    color: #bbb;
+}
+
+.tab-bar__tab{
+    position: relative;
+    color: #fff;
+}
+
+.tab-bar__notification{
+    position: absolute;
+    border-radius: 50%;
+    left: 1em;
+    bottom: 1em;
+    animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+.badge {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+@keyframes notificationAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.tab-bar__btn {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes appearBtnAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.tab-bar__btn:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.tab-bar__btn:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.tab-bar__btn:last-child {
+    animation-delay: 0.8s;
+}
+
+.chat_bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background-color: #27374D;
+    padding: 2%;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.setbtn{
+    background: #fff;
+    float: left;
+    width: 6%;
+    text-align: center;
+    border-radius: 0.9375em;
+    position: absolute;
+    padding: 0.5% 1%;
+}
+
+.chat_bar-text{
+    width: 68%;
+    margin-left: 10%;
+    position: absolute;
+    margin-right: 2%;
+}
+
+.chat_bar-text input{
+    border-radius: 0.9375em;
+    width: 100%;
+    height: 20px;
+    padding: 0.5% 1%;
+}
+
+.sendbtn{
+    background: #fff;
+    border-radius: 0.9375em;
+    float: right;
+    width: 13%;
+    padding: 0.5% 1%;
+}
+
+.sendbtn:hover {
+    background: #526D82;
+    box-shadow: inset 1px 1px 1px #DDE6ED;
+}
