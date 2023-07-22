@@ -1,15 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import './style.css';
 
 const People = () => {
     return (
         <>
-            <Helmet>
-                <script src="https://kit.fontawesome.com/f48f31764d.js" crossorigin="anonymous"></script>
-            </Helmet>
-
             <header className="header">
                 <h1 className="header-title">친구</h1>
                 <div className="header-icons">
@@ -31,11 +26,11 @@ const People = () => {
                             <div className="textline_for">CapStone set</div>
                         </span>
                     </div>
-                    <div className="user-component__column"></div>
+                    <div className="user-component"></div>
                 </div>
                 </a>
-                <div className="friends-screen__channel">
-                <div className="friends-screen__channel-header">
+                <div className="friends-screen">
+                <div className="friends-screen-header">
                     <span>친구</span>
                     <i className="fas fa-chevron-up fa-xs"></i>
                 </div>
@@ -53,20 +48,20 @@ const People = () => {
                 </div>
             </main>
             <nav className="nav">
-                <ul className="tab-bar__list">
+                <ul className="nav-list">
                     <li className="tab-bar__btn">
-                        <a href="#" className="tab-bar__tab--selected">
+                        <a href="#" className="nav-tab--selected">
                             <i className="fas fa-user fa-2x"></i>
                         </a>
                     </li>
-                    <li className="tab-bar__list">
-                        <a href="#" className="tab-bar__tab">
-                            <span className="tab-bar__notification badge">3</span>
+                    <li className="tab-bar__btn">
+                        <a href="#" className="nav-tab">
+                            <span className="nav-notification badge">3</span>
                             <i className="fas fa-comment fa-2x"></i>
                         </a>
                     </li>
-                    <li className="tab-bar__list">
-                        <a href="#" className="tab-bar__tab">
+                    <li className="tab-bar__btn">
+                        <a href="#" className="nav-tab">
                             <i className="fas fa-ellipsis-h fa-2x"></i>
                         </a>
                     </li>

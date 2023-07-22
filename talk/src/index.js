@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Helmet } from 'react-helmet';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -11,6 +12,9 @@ import People from './C&C/people';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Helmet>
+      <script src="https://kit.fontawesome.com/f48f31764d.js" crossorigin="anonymous"></script>
+    </Helmet>
     <People />
   </React.StrictMode>
 );

@@ -8,23 +8,23 @@
     border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
 
-.tab-bar__list {
+.nav-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.tab-bar__tab--selected{
+.nav-tab--selected{
     position: relative;
     color: #bbb;
 }
 
-.tab-bar__tab{
+.nav-tab{
     position: relative;
     color: #fff;
 }
 
-.tab-bar__notification{
+.nav-notification{
     position: absolute;
     border-radius: 50%;
     left: 1em;
