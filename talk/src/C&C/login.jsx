@@ -4,7 +4,7 @@ import './style.css';
 
 function Login() {
     return (
-        <>
+        <React.Fragment>
             <a className="logo" href="#">
             <img src="#" alt="C&C 로고" id="logo" />
             </a>
@@ -32,7 +32,7 @@ function Login() {
             <div id="no-mobile">
                 <span>화면이 너무 큽니다.</span>
             </div>
-        </>
+        </React.Fragment>
     );
 }
 

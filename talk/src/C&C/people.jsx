@@ -4,7 +4,7 @@ import './style.css';
 
 const People = () => {
     return (
-        <>
+        <React.Fragment>
             <header className="header">
                 <h1 className="header-title">친구</h1>
                 <div className="header-icons">
@@ -73,7 +73,7 @@ const People = () => {
             <div id="no-mobile">
                 <span>화면이 너무 큽니다.</span>
             </div>
-        </>
+        </React.Fragment>
     );
 };
 
