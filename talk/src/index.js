@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import Login from './C&C/login';
 import Registration from './C&C/registration';
 import People from './C&C/people';
+import Chat from './C&C/chat';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,7 @@ root.render(
     <Helmet>
       <script src="https://kit.fontawesome.com/f48f31764d.js" crossorigin="anonymous"></script>
     </Helmet>
-    <People />
+    <Chat />
   </React.StrictMode>
 );
 
