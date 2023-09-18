@@ -232,7 +232,7 @@ img{
     color: #fff;
 }
 
-.L-box form input[type="submit"]{
+.L-box form button[type="button"]{
     border: none;
     outline: none;
     padding: 9px 25px;
@@ -245,6 +245,6 @@ img{
     cursor: pointer;
 }
 
-.L-box form input[type="submit"]:active{
+.L-box form button[type="button"]:active{
     opacity: 0.8;
 }

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import './L&R.css';
 
 function Registration() {
-
     const [isTeamSelectDisabled, setIsTeamSelectDisabled] = useState(true);
 
     const handleCompanyNumberChange = (event) => {
@@ -66,7 +65,7 @@ function Registration() {
                             </div>
                             <i></i>
                         </div>
-                        <input type="submit" value="회원가입" />
+                        <button type="button" onClick="/Login">회원가입</button>
                     </form>
                 </div>
             </div>
