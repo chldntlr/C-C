@@ -232,8 +232,20 @@ img{
     text-decoration: none;
 }
 
+.registration-link{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
 .L-box form .L-links a:hover,
 .L-box form .L-links a:nth-child(2){
+    color: #fff;
+}
+
+.registration-link:hover,
+.registration-link:nth-child(2){
     color: #fff;
 }
 

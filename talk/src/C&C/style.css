@@ -17,7 +17,3 @@ body{
     margin: 0;
     padding: 0;
 }
-
-@media (max-width: 768px) {
-    /* 모바일 화면 스타일링 */
-}
