@@ -79,20 +79,20 @@ const Chat = () => {
             <nav className="nav">
                 <ul className="nav-list">
                     <li className="tab-bar__btn">
-                        <a href="#" className="nav-tab">
+                        <Link to="/People" className="nav-tab">
                             <i className="fas fa-user fa-2x"></i>
-                        </a>
+                        </Link>
                     </li>
-                    <li className="tab-bar__list">
-                        <a href="#" className="nav-tab--selected">
+                    <li className="tab-bar__btn">
+                        <Link to="/Chat" className="nav-tab--selected">
                             <span className="nav-notification badge">3</span>
                             <i className="fas fa-comment fa-2x"></i>
-                        </a>
+                        </Link>
                     </li>
-                    <li className="tab-bar__list">
-                        <a href="#" className="nav-tab">
+                    <li className="tab-bar__btn">
+                        <Link to="#" className="nav-tab">
                             <i className="fas fa-ellipsis-h fa-2x"></i>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

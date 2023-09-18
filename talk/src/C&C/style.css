@@ -3,6 +3,7 @@
 @import './css/people.css';
 @import './css/chat.css';
 @import './css/footer.css';
+@import './css/nomobile.css';
 
 *{
     margin: 0;
