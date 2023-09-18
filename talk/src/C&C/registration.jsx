@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-import './L&R.css';
+import { Link } from 'react-router-dom';
+
+import './style.css';
 
 function Registration() {
     const [isTeamSelectDisabled, setIsTeamSelectDisabled] = useState(true);
@@ -16,10 +18,11 @@ function Registration() {
 
     return (
         <React.Fragment>
-            <div>
-                <a className="logo" href="#">
-                    <img src="#" alt="C&C 로고" id="logo" />
-                </a>
+            <div className="R-body">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+                <Link className="logo" to="Login">
+                    <img src="./img/C&Clogo.png" alt="C&C 로고" id="logo" />
+                </Link>
                 <div className="R-box">
                     <span className="R-borderLine"></span>
                     <form action="Registration" method="post">
@@ -65,7 +68,9 @@ function Registration() {
                             </div>
                             <i></i>
                         </div>
-                        <button type="button" onClick="/Login">회원가입</button>
+                        <Link to="/Login">
+                            <button type="button">회원가입</button>
+                        </Link>
                     </form>
                 </div>
             </div>

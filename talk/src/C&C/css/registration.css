@@ -5,7 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+.R-body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +18,7 @@ body{
     background: #27374D;
 }
 
-.logo{
+#logo{
     -webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -48,7 +53,7 @@ body{
     }
 }
 
-#logo {
+.logo {
     display: block;
     margin: 0 auto;
 }
