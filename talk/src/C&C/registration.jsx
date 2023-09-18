@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './style.css';
+import './style1.css';
 
 function Registration() {
 
@@ -23,7 +23,7 @@ function Registration() {
                 </a>
                 <div className="R-box">
                     <span className="R-borderLine"></span>
-                    <form action="#" method="post">
+                    <form action="Registration" method="post">
                         <h2>Registration</h2>
                         <div className="R-inputBox">
                             <input type="text" required />

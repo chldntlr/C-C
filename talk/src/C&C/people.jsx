@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import './style.css';
 
 const People = () => {
@@ -50,20 +52,20 @@ const People = () => {
             <nav className="nav">
                 <ul className="nav-list">
                     <li className="tab-bar__btn">
-                        <a href="#" className="nav-tab--selected">
+                        <Link to="People" className="nav-tab--selected">
                             <i className="fas fa-user fa-2x"></i>
-                        </a>
+                        </Link>
                     </li>
                     <li className="tab-bar__btn">
-                        <a href="#" className="nav-tab">
+                        <Link to="Chat" className="nav-tab">
                             <span className="nav-notification badge">3</span>
                             <i className="fas fa-comment fa-2x"></i>
-                        </a>
+                        </Link>
                     </li>
                     <li className="tab-bar__btn">
-                        <a href="#" className="nav-tab">
+                        <Link to="#" className="nav-tab">
                             <i className="fas fa-ellipsis-h fa-2x"></i>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

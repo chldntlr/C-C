@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import './style.css';
 
 const Chat = () => {
@@ -17,7 +19,7 @@ const Chat = () => {
                 </div>
             </header>
             <main className="chat">
-                <a href="#">
+                <Link to="Chatroom">
                     <div className="chat__section-row">
                         <img src="#" alt="Profile" />
                         <div className="chat__section-column">
@@ -33,7 +35,7 @@ const Chat = () => {
                             <div className="badge">1</div>
                         </div>
                     </div>
-                </a>
+                </Link>
                 <a href="#">
                     <div className="chat__section-row">
                         <img src="#" alt="Profile" />
