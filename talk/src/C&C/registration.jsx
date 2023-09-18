@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './stylefirst.css';
+import './L&R.css';
 
 function Registration() {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './stylesecond.css';
+import './style.css';
 
 const Chatroom = () => {
     return(

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import './stylesecond.css';
+import './style.css';
 
 const People = () => {
     return (

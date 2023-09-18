@@ -19,7 +19,7 @@ ReactDOM.render(
     </Helmet>
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/Login" element={<Login />} />
         <Route path="/Registration" element={<Registration />} />
         <Route path="/People" element={<People />} />
         <Route path="/Chat" element={<Chat />} />

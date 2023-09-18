@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import './stylefirst.css';
+import './L&R.css';
 
 function Login() {
     return (
