@@ -7,7 +7,7 @@
     background-color: #fff;
 }
 
-body main{
+.C-body main{
     margin: 1%;
 }
 
@@ -85,6 +85,8 @@ img{
 .chat-plus{
     background-color: #27374D;
     border-radius: 50%;
+    position: relative;
+    color: #fff;
     width: 75px;
     height: 75px;
     position: fixed;
@@ -95,4 +97,6 @@ img{
 .chat-plus i{
     align-items: center;
     text-align: center;
+    margin-top: 30%;
+    margin-left: 30%;
 }

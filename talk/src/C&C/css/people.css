@@ -17,6 +17,7 @@ img{
 
 .people{
     padding: 0px var(--horizontal-space);
+    margin: 3%;
 }
 
 .people a{
@@ -41,14 +42,14 @@ img{
     color: gray;
 }
 
-.friends-screen__channel{
+.friends-screen{
     margin-top: 25px;
     border-top: var(--main-border);
     padding-top: 15px;
     border-top: 1px solid gray;
 }
 
-.friends-screen__channel-header{
+.friends-screen-header{
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;

@@ -4,13 +4,18 @@ import { Link } from 'react-router-dom';
 
 import './style.css';
 
-const Chat = () => {
+const Chatplus = () => {
     return (
         <React.Fragment>
             <div className="C-body">
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
                 <header className="header">
-                    <h1 className="header-title">채팅</h1>
+                    <span className="wrapper">
+                        <Link to="/Chat" className="back-link">
+                            <i className="fa fa-chevron-left fa-2x"></i>
+                        </Link>
+                    </span>
+                    <h1 className="header-title">채팅 추가</h1>
                     <div className="header-icons">
                         <span>
                             <Link to="#" className="custom-link">
@@ -76,7 +81,7 @@ const Chat = () => {
                             </div>
                         </div>
                     </a>
-                    <Link to="/Chatplus">
+                    <Link to="#">
                         <div className="chat-plus">
                             <i class="fa fa-plus fa-2x"></i>
                         </div>
@@ -110,4 +115,4 @@ const Chat = () => {
     );
 };
 
-export default Chat;
+export default Chatplus;

@@ -11,6 +11,9 @@ import Registration from './C&C/registration';
 import People from './C&C/people';
 import Chat from './C&C/chat';
 import Chatroom from './C&C/chatroom';
+import Set from './C&C/set';
+import More from './C&C/more';
+import Chatplus from './C&C/chatplus';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,6 +27,9 @@ ReactDOM.render(
         <Route path="/People" element={<People />} />
         <Route path="/Chat" element={<Chat />} />
         <Route path="/Chatroom" element={<Chatroom />} />
+        <Route path="/Set" element={<Set />} />
+        <Route path="/More" element={<More />} />
+        <Route path="/Chatplus" element={<Chatplus />} />
       </Routes>
     </Router>
   </React.StrictMode>,

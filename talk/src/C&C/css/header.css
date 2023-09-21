@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,14 +8,39 @@
     color: #fff;
 }
 
+.wrapper .back-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper .back-link:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
 .header-title {
     font-size: 2em;
     font-weight: 600;
-    margin: 1%;
+    margin-left: 1%; /* 왼쪽 마진을 1%로 지정합니다. */
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.header-icons{
+.header-icons {
     margin-right: 1.5%;
+}
+
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-link:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 @keyframes rotateCog {
@@ -25,7 +50,7 @@
     to {
         transform: rotateZ(360deg);
     }
-} 
+}
 
 .header-icons .fa-cog:hover {
     animation: rotateCog 1s linear infinite;

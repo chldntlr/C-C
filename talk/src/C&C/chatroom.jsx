@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import './style.css';
 
 const Chatroom = () => {
@@ -8,6 +10,11 @@ const Chatroom = () => {
             <div className="CR-body">
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
                 <header className="header">
+                    <span className="wrapper">
+                        <Link to="/Chat" className="back-link">
+                            <i className="fa fa-chevron-left fa-2x"></i>
+                        </Link>
+                    </span>
                     <h1 className="header-title">채팅</h1>
                     <div className="header-icons">
                         <span>
@@ -22,8 +29,7 @@ const Chatroom = () => {
                     <ul className="chats__list">
                         <li className="chats_chat">
                             <div className="chats__content">
-                                <div className="box">
-                                    <span className="borderLine"></span>
+                                <div>
                                     <form>
                                         <img src="#" />
                                     </form>
