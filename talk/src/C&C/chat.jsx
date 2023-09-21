@@ -32,7 +32,7 @@ const Chat = () => {
                                 <h4 className="chat__section-name">교육 봇</h4>
                                 <span className="chat__section-textline">
                                     <div className="chat__textline_for">
-                                    요청 하신 자료는 현재 2건 있습니다....
+                                        요청 하신 자료는 현재 2건 있습니다....
                                     </div>
                                 </span>
                             </div>
@@ -49,7 +49,7 @@ const Chat = () => {
                                 <h4 className="chat__section-name">##</h4>
                                 <span className="chat__section-textline">
                                     <div className="chat__textline_for">
-                                    ##
+                                        ##
                                     </div>
                                 </span>
                             </div>
@@ -66,7 +66,7 @@ const Chat = () => {
                                 <h4 className="chat__section-name">**</h4>
                                 <span className="chat__section-textline">
                                     <div className="chat__textline_for">
-                                    **
+                                        **
                                     </div>
                                 </span>
                             </div>

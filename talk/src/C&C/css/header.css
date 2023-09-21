@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--horizontal-space);
+    padding: 1.5%;
     margin-bottom: 1%;
+    height: 8%;
     background-color: #27374D;
     color: #fff;
 }
@@ -24,13 +25,18 @@
 .header-title {
     font-size: 2em;
     font-weight: 600;
-    margin-left: 1%; /* 왼쪽 마진을 1%로 지정합니다. */
+    margin-left: 1%;
     display: inline-block;
     vertical-align: middle;
 }
 
 .header-icons {
-    margin-right: 1.5%;
+    margin-right: 1%;
+    width: 10%;
+}
+
+.header-icons span{
+    padding: 5%;
 }
 
 .custom-link {
