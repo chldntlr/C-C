@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './style.css';
+import Logo from './img/C&Clogo.png';
 
 function Registration() {
     const [isTeamSelectDisabled, setIsTeamSelectDisabled] = useState(true);
@@ -20,8 +21,8 @@ function Registration() {
         <React.Fragment>
             <div className="R-body">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-                <Link className="logo" to="Login">
-                    <img src="./img/C&Clogo.png" alt="C&C 로고" id="logo" />
+                <Link className="logo" to="/Login">
+                    <img src={Logo} alt="Logo" id="logo" />
                 </Link>
                 <div className="R-box">
                     <span className="R-borderLine"></span>

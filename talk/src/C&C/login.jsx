@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './style.css';
+import Logo from './img/C&Clogo.png';
 
 function Login() {
     return (
@@ -10,7 +11,7 @@ function Login() {
             <div className="L-body">
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
                 <Link className="logo" to="/Login">
-                    <img src="./img/C&Clogo.png" alt="C&C 로고" id="logo" />
+                    <img src={Logo} alt="Logo" id="logo" />
                 </Link>
                 <div className="L-box">
                     <span className="L-borderLine"></span>
