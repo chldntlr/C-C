@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './style.css';
+import Logo from './img/C&Clogo.png';
 
 const People = () => {
     return (
@@ -27,7 +28,7 @@ const People = () => {
                 <main className="people">
                     <a href="##">
                     <div className="me">
-                        <img src="#" alt="본인 이미지" />
+                        <img src={Logo} alt="my img" className="M-img" />
                         <div className="me-column">
                             <h4 className="me-name">김광연</h4>
                             <span className="me-textline">
@@ -38,21 +39,32 @@ const People = () => {
                     </div>
                     </a>
                     <div className="friends-screen">
-                    <div className="friends-screen-header">
-                        <span>친구</span>
-                        <i className="fas fa-chevron-up fa-xs"></i>
-                    </div>
-                    <a href="##">
-                        <div className="friends">
-                            <img src="#" alt="교육 봇 이미지" />
-                            <div className="friends-column">
-                                <h4 className="friends-name">교육 봇</h4>
-                                <span className="friends-textline">
-                                    <div className="textline_for">**회사 교육 도우미입니다! 많은 질문부탁 드려요!</div>
-                                </span>
-                            </div>
+                        <div className="friends-screen-header">
+                            <span>친구</span>
+                            <i className="fas fa-chevron-up fa-xs"></i>
                         </div>
-                    </a>
+                        <a href="##">
+                            <div className="friends">
+                                <img src={Logo} alt="bot img" className="F-img" />
+                                <div className="friends-column">
+                                    <h4 className="friends-name">교육 봇</h4>
+                                    <span className="friends-textline">
+                                        <div className="textline_for">**회사 교육 도우미입니다! 많은 질문부탁 드려요!</div>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="##">
+                            <div className="friends">
+                                <img src={Logo} alt="friend img" className="F-img" />
+                                <div className="friends-column">
+                                    <h4 className="friends-name">교육 봇</h4>
+                                    <span className="friends-textline">
+                                        <div className="textline_for">**회사 교육 도우미입니다! 많은 질문부탁 드려요!</div>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </main>
                 <nav className="nav">

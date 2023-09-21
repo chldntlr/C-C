@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './style.css';
+import Logo from './img/C&Clogo.png';
 
 const Chat = () => {
     return (
@@ -27,7 +28,7 @@ const Chat = () => {
                 <main className="chat">
                     <Link to="/Chatroom">
                         <div className="chat__section-row">
-                            <img src="#" alt="Profile" />
+                            <img src={Logo} alt="Profile" />
                             <div className="chat__section-column">
                                 <h4 className="chat__section-name">교육 봇</h4>
                                 <span className="chat__section-textline">
@@ -44,7 +45,7 @@ const Chat = () => {
                     </Link>
                     <a href="#">
                         <div className="chat__section-row">
-                            <img src="#" alt="Profile" />
+                            <img src={Logo} alt="Profile" />
                             <div className="chat__section-column">
                                 <h4 className="chat__section-name">##</h4>
                                 <span className="chat__section-textline">
@@ -61,7 +62,7 @@ const Chat = () => {
                     </a>
                     <a href="#">
                         <div className="chat__section-row">
-                            <img src="#" alt="Profile" />
+                            <img src={Logo} alt="Profile" />
                             <div className="chat__section-column">
                                 <h4 className="chat__section-name">**</h4>
                                 <span className="chat__section-textline">

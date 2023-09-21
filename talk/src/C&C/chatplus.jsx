@@ -29,63 +29,8 @@ const Chatplus = () => {
                         </span>
                     </div>
                 </header>
-                <main className="chat">
-                    <Link to="/Chatroom">
-                        <div className="chat__section-row">
-                            <img src="#" alt="Profile" />
-                            <div className="chat__section-column">
-                                <h4 className="chat__section-name">교육 봇</h4>
-                                <span className="chat__section-textline">
-                                    <div className="chat__textline_for">
-                                    요청 하신 자료는 현재 2건 있습니다....
-                                    </div>
-                                </span>
-                            </div>
-                            <div className="new_chat">
-                                <h6 className="time">23:22</h6>
-                                <div className="badge">1</div>
-                            </div>
-                        </div>
-                    </Link>
-                    <a href="#">
-                        <div className="chat__section-row">
-                            <img src="#" alt="Profile" />
-                            <div className="chat__section-column">
-                                <h4 className="chat__section-name">##</h4>
-                                <span className="chat__section-textline">
-                                    <div className="chat__textline_for">
-                                    ##
-                                    </div>
-                                </span>
-                            </div>
-                            <div className="new_chat">
-                                <h6 className="time">21:22</h6>
-                                <div className="badge">1</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div className="chat__section-row">
-                            <img src="#" alt="Profile" />
-                            <div className="chat__section-column">
-                                <h4 className="chat__section-name">**</h4>
-                                <span className="chat__section-textline">
-                                    <div className="chat__textline_for">
-                                    **
-                                    </div>
-                                </span>
-                            </div>
-                            <div className="new_chat">
-                                <h6 className="time">12:04</h6>
-                                <div className="badge">1</div>
-                            </div>
-                        </div>
-                    </a>
-                    <Link to="#">
-                        <div className="chat-plus">
-                            <i class="fa fa-plus fa-2x"></i>
-                        </div>
-                    </Link>
+                <main className="new-chat">
+                    
                 </main>
                 <nav className="nav">
                     <ul className="nav-list">

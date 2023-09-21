@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './style.css';
+import Logo from './img/C&Clogo.png';
 
 const Chatroom = () => {
     return(
@@ -31,7 +32,7 @@ const Chatroom = () => {
                             <div className="chats__content">
                                 <div>
                                     <form>
-                                        <img src="#" />
+                                        <img src={Logo} />
                                     </form>
                                 </div>
                                 <div className="chat__priview">
@@ -54,7 +55,7 @@ const Chatroom = () => {
                                 <div className="box">
                                     <span className="borderLine"></span>
                                     <form>
-                                        <img src="#" />
+                                        <img src={Logo} />
                                     </form>
                                 </div>
                                 <div className="chat__priview">

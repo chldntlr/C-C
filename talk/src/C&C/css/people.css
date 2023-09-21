@@ -34,6 +34,14 @@ img{
     margin-right: 10px;
 }
 
+.M-img{
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    padding-left: 0.7px;
+    padding-top: 0.7px;
+}
+
 .me .me-column{
     text-align: left;
 }
@@ -63,6 +71,14 @@ img{
 
 .friends img{
     margin-right: 10px;
+}
+
+.F-img{
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    padding-left: 0.7px;
+    padding-top: 0.7px;
 }
 
 .friends .friends-column{
