@@ -27,47 +27,46 @@ const Chatroom = () => {
                     </div>
                 </header>
                 <main className="chats">
-                    <ul className="chats__list">
+                    <ul className="chatlist-me">
                         <li className="chats_chat">
-                            <div className="chats__content">
+                            <div className="chats-content">
                                 <div>
                                     <form>
                                         <img src={Logo} />
                                     </form>
                                 </div>
-                                <div className="chat__priview">
-                                    <h3 className="chat__user">
+                                <div className="chat-priview">
+                                    <h3 className="chatuser-me">
                                         사자
                                     </h3>
-                                    <span className="chat-last-message">
+                                    <span className="chat-last-message-my">
                                         Hi
                                     </span>
                                 </div>
                             </div>
-                            <span className="chat__date-time">
+                            <span className="chat-date-time-me">
                                 08:55
                             </span>
                         </li>
                     </ul>
-                    <ul className="chats__list">
+                    <ul className="chatlist-you">
                         <li className="chats_chat">
-                            <div className="chats__content">
-                                <div className="box">
-                                    <span className="borderLine"></span>
+                            <div className="chats-content">
+                                <div>
                                     <form>
                                         <img src={Logo} />
                                     </form>
                                 </div>
-                                <div className="chat__priview">
-                                    <h3 className="chat__user">
+                                <div className="chat-priview">
+                                    <h3 className="chatuser-you">
                                         호랑이
                                     </h3>
-                                    <span className="chat-last-message">
+                                    <span className="chat-last-message-you">
                                         Bye
                                     </span>
                                 </div>
                             </div>
-                            <span className="chat__date-time">
+                            <span className="chat-date-time-you">
                                 05:45
                             </span>
                         </li>

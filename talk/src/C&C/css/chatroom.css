@@ -30,51 +30,51 @@
     padding: 0;
 }
 
-.chats_my {
+.chatlist-me {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     float: right;
 }
 
-.chats_you {
+.chatlist-you {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     float: left;
 }
 
-.chats__content {
+.chats-content {
     display: flex;
     align-items: center;
 }
 
-.chats__content img {
+.chats-content img {
     width: 3.125em;
     height: 3.125em;
     margin-right: 10px;
     border-radius: 50%;
 }
 
-.chat__priview {
+.chat-priview {
     display: flex;
     flex-direction: column;
 }
 
-.chat__user-my {
+.chatuser-me {
     margin: 0;
     font-size: 16px;
     font-weight: bold;
     text-align: right;
 }
 
-.chat__user-you {
+.chatuser-you {
     margin: 0;
     font-size: 16px;
     font-weight: bold;
 }
 
-.chat-last-message-my {
+.chat-last-message-me {
     font-size: 14px;
     background-color: #27374D;
     border-radius: 0.9375em;
@@ -90,7 +90,7 @@
     color: #fff;
 }
 
-.chat-last-message-my,
+.chat-last-message-me,
 .chat-last-message-you{
     margin: 0.5%;
     padding: 3%;
@@ -101,13 +101,13 @@
     display: inline-block;
 }
 
-.chat__date-time-my {
+.chat-date-time-me {
     font-size: 12px;
     color: gray;
     margin-right: 3%;
 }
 
-.chat-next-my,
+.chat-next-me,
 .chat-next-you{
     display: flex;
     align-items: center;
