@@ -11,12 +11,12 @@
     flex-direction: column;
 }
 
-.chats .date-time{
+.chats .chat-date-time-me,
+.chats .chat-date-time-you{
     font-size: medium;
     text-align: center;
     justify-content: center;
     padding: 2%;
-    background-color: gray;
     width: 28%;
     margin-left: 35%;
     border-radius: 0.9375em;
@@ -103,7 +103,7 @@
 
 .chat-date-time-me {
     font-size: 12px;
-    color: gray;
+    color: #808080;
     margin-right: 3%;
 }
 
@@ -119,6 +119,6 @@
 
 .chat__date-time-you {
     font-size: 12px;
-    color: gray;
-    margin-left: 2%;
+    color: #808080;
+    margin-left: 3%;
 }

@@ -39,7 +39,7 @@ const Chatroom = () => {
                                     <h3 className="chatuser-me">
                                         사자
                                     </h3>
-                                    <span className="chat-last-message-my">
+                                    <span className="chat-last-message-me">
                                         Hi
                                     </span>
                                 </div>
