@@ -38,7 +38,7 @@ const Set = () => {
                 <nav className="nav">
                     <ul className="nav-list">
                         <li className="tab-bar__btn">
-                            <Link to="/People" className="nav-tab">
+                            <Link to="/" className="nav-tab">
                                 <i className="fas fa-user fa-2x"></i>
                             </Link>
                         </li>

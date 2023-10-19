@@ -49,9 +49,16 @@
     align-items: center;
 }
 
-.chats-content img {
-    width: 3.125em;
-    height: 3.125em;
+.chats-content .img-me {
+    width: 3.25em;
+    height: 3.25em;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.chats-content .img-you {
+    width: 3.25em;
+    height: 3.25em;
     margin-right: 10px;
     border-radius: 50%;
 }

@@ -8,6 +8,24 @@
     border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
 
+.CR-nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #27374D;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.upload{
+    width: 10%;
+}
+
+.send{
+    width: 30%;
+}
+
 .nav-list {
     display: flex;
     justify-content: space-between;
@@ -36,6 +54,7 @@
     background-color: tomato;
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

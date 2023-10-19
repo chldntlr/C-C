@@ -1,11 +1,15 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import './style.css';
 import Logo from './img/C&Clogo.png';
 
 const Chat = () => {
+
+    const currentChatRoom = useSelector(state => state.chatRoom.currentChatRoom)
+
     return (
         <React.Fragment>
             <div className="C-body">
@@ -86,7 +90,7 @@ const Chat = () => {
                 <nav className="nav">
                     <ul className="nav-list">
                         <li className="tab-bar__btn">
-                            <Link to="/People" className="nav-tab">
+                            <Link to="/" className="nav-tab">
                                 <i className="fas fa-user fa-2x"></i>
                             </Link>
                         </li>

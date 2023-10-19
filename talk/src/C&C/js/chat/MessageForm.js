@@ -1,20 +1,15 @@
-import React, { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useRef } from 'react'
 import Form from 'react-bootstrap/Form';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import firebase from '../firebase';
+import firebase from '../../../firebase';
 import { useSelector } from 'react-redux';
 
 import { getDatabase, ref, set, remove, push, child } from "firebase/database";
 import { getStorage, ref as strRef, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
-import './style.css';
-import Logo from './img/C&Clogo.png';
-
-const Chatroom = () => {
-
+function MessageForm() {
     const chatRoom = useSelector(state => state.chatRoom.currentChatRoom)
     const user = useSelector(state => state.user.currentUser)
     const [content, setContent] = useState("")
@@ -164,128 +159,63 @@ const Chatroom = () => {
         }
     }
 
-    return(
-        <React.Fragment>
-            <div className="CR-body">
-                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-                <header className="header">
-                    <span className="wrapper">
-                        <Link to="/Chat" className="back-link">
-                            <i className="fa fa-chevron-left fa-2x"></i>
-                        </Link>
-                    </span>
-                    <h1 className="header-title">채팅</h1>
-                    <div className="header-icons">
-                        <span>
-                            <i className="fas fa-search fa-lg"></i>
-                        </span>
-                        <span>
-                            <i className="fas fa-cog fa-lg"></i>
-                        </span>
-                    </div>
-                </header>
-                <main className="chats">
-                    <ul className="chatlist-me">
-                        <li className="chats_chat">
-                            <div className="chats-content">
-                                <img src={Logo} className="img-me"/>
-                                <div className="chat-priview">
-                                    <h3 className="chatuser-me">
-                                        사자
-                                    </h3>
-                                    <span className="chat-last-message-me">
-                                        Hi
-                                    </span>
-                                </div>
-                            </div>
-                            <span className="chat-date-time-me">
-                                08:55
-                            </span>
-                        </li>
-                    </ul>
-                    <ul className="chatlist-you">
-                        <li className="chats_chat">
-                            <div className="chats-content">
-                                <img src={Logo} className="img-you"/>
-                                <div className="chat-priview">
-                                    <h3 className="chatuser-you">
-                                        호랑이
-                                    </h3>
-                                    <span className="chat-last-message-you">
-                                        Bye
-                                    </span>
-                                </div>
-                            </div>
-                            <span className="chat-date-time-you">
-                                05:45
-                            </span>
-                        </li>
-                    </ul>
-                </main>
-                <nav className="CR-nav">
-                    <Row>
-                        <Col>
-                            <button
-                                onClick={handleOpenImageRef}
-                                className="upload"
-                                style={{ width: '100%' }}
-                                disabled={loading ? true : false}
-                            >
-                                사진
-                            </button>
-                        </Col>
-                    </Row>
+    return (
+        <div>
+            <Form onSubmit={handleSubmit}>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <Form.Control
+                        onKeyDown={handleKeyDown}
+                        value={content}
+                        onChange={handleChange}
+                        as="textarea"
+                        rows={3} />
+                </Form.Group>
+            </Form>
 
-                    <Form onSubmit={handleSubmit}>
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Control
-                                onKeyDown={handleKeyDown}
-                                value={content}
-                                onChange={handleChange}
-                                as="textarea"
-                                rows={3} />
-                        </Form.Group>
-                    </Form>
+            {
+                !(percentage === 0 || percentage === 100) &&
+                <ProgressBar variant="warning" label={`${percentage}%`} now={percentage} />
+            }
 
-                    {
-                        !(percentage === 0 || percentage === 100) &&
-                        <ProgressBar variant="warning" label={`${percentage}%`} now={percentage} />
-                    }
-
-                    <div>
-                        {errors.map(errorMsg => <p style={{ color: 'red' }} key={errorMsg}>
-                            {errorMsg}
-                        </p>)}
-                    </div>
-
-                    <Row>
-                        <Col>
-                            <button
-                                onClick={handleSubmit}
-                                className="send"
-                                style={{ width: '100%' }}
-                                disabled={loading ? true : false}
-                            >
-                                보내기
-                            </button>
-                        </Col>
-                    </Row>
-
-                    <input
-                        accept="image/jpeg, image/png"
-                        style={{ display: 'none' }}
-                        type="file"
-                        ref={inputOpenImageRef}
-                        onChange={handleUploadImage}
-                    />
-
-                </nav>
-                <div id="no-mobile">
-                    <span>화면이 너무 큽니다.</span>
-                </div>
+            <div>
+                {errors.map(errorMsg => <p style={{ color: 'red' }} key={errorMsg}>
+                    {errorMsg}
+                </p>)}
             </div>
-        </React.Fragment>
-    );
+
+            <Row>
+                <Col>
+                    <button
+                        onClick={handleSubmit}
+                        className="message-form-button"
+                        style={{ width: '100%' }}
+                        disabled={loading ? true : false}
+                    >
+                        SEND
+                    </button>
+                </Col>
+                <Col>
+                    <button
+                        onClick={handleOpenImageRef}
+                        className="message-form-button"
+                        style={{ width: '100%' }}
+                        disabled={loading ? true : false}
+                    >
+                        UPLOAD
+                    </button>
+                </Col>
+            </Row>
+
+            <input
+                accept="image/jpeg, image/png"
+                style={{ display: 'none' }}
+                type="file"
+                ref={inputOpenImageRef}
+                onChange={handleUploadImage}
+            />
+
+        </div>
+    )
 }
 
-export default Chatroom;
+export default MessageForm

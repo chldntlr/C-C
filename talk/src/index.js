@@ -1,39 +1,36 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { Helmet } from 'react-helmet';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Login from './C&C/login';
-import Registration from './C&C/registration';
-import People from './C&C/people';
-import Chat from './C&C/chat';
-import Chatplus from './C&C/chatplus';
-import Chatroom from './C&C/chatroom';
-import Set from './C&C/set';
-import More from './C&C/more';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import promiseMiddleware from 'redux-promise';
+import ReduxThunk from 'redux-thunk';
+import Reducer from './C&C/js/reducers';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore)
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <Helmet>
-      <script src="https://kit.fontawesome.com/f48f31764d.js" crossorigin="anonymous"></script>
-    </Helmet>
-    <Router>
-      <Routes>
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Registration" element={<Registration />} />
-        <Route path="/People" element={<People />} />
-        <Route path="/Chat" element={<Chat />} />
-        <Route path="/Chatplus" element={<Chatplus />} />
-        <Route path="/Chatroom" element={<Chatroom />} />
-        <Route path="/Set" element={<Set />} />
-        <Route path="/More" element={<More />} />
-      </Routes>
-    </Router>
+    <Provider store={createStoreWithMiddleware(
+      Reducer,
+      window.__REDUX_DEVTOOLS_EXTENSION__ &&
+      window.__REDUX_DEVTOOLS_EXTENSION__()
+    )}>
+      <Helmet>
+        <script src="https://kit.fontawesome.com/f48f31764d.js" crossorigin="anonymous"></script>
+      </Helmet>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

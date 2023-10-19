@@ -1,11 +1,15 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import './style.css';
 import Logo from './img/C&Clogo.png';
 
 const People = () => {
+
+    const currentUser = useSelector(state => state.user.currentUser)
+
     return (
         <React.Fragment>
             <div className="P-body">
@@ -27,16 +31,16 @@ const People = () => {
                 </header>
                 <main className="people">
                     <a href="##">
-                    <div className="me">
-                        <img src={Logo} alt="my img" className="M-img" />
-                        <div className="me-column">
-                            <h4 className="me-name">김광연</h4>
-                            <span className="me-textline">
-                                <div className="textline_for">CapStone set</div>
-                            </span>
+                        <div className="me">
+                            <img src={Logo} alt="my img" className="M-img" />
+                            <div className="me-column">
+                                <h4 className="me-name">김광연</h4>
+                                <span className="me-textline">
+                                    <div className="textline_for">CapStone set</div>
+                                </span>
+                            </div>
+                            <div className="user-component"></div>
                         </div>
-                        <div className="user-component"></div>
-                    </div>
                     </a>
                     <div className="friends-screen">
                         <div className="friends-screen-header">
@@ -58,9 +62,9 @@ const People = () => {
                             <div className="friends">
                                 <img src={Logo} alt="friend img" className="F-img" />
                                 <div className="friends-column">
-                                    <h4 className="friends-name">교육 봇</h4>
+                                    <h4 className="friends-name">사자</h4>
                                     <span className="friends-textline">
-                                        <div className="textline_for">**회사 교육 도우미입니다! 많은 질문부탁 드려요!</div>
+                                        <div className="textline_for">언제나 신나게</div>
                                     </span>
                                 </div>
                             </div>
@@ -70,7 +74,7 @@ const People = () => {
                 <nav className="nav">
                     <ul className="nav-list">
                         <li className="tab-bar__btn">
-                            <Link to="/People" className="nav-tab--selected">
+                            <Link to="/" className="nav-tab--selected">
                                 <i className="fas fa-user fa-2x"></i>
                             </Link>
                         </li>

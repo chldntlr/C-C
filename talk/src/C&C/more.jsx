@@ -15,10 +15,14 @@ const More = () => {
                     </h1>
                     <div className="header-icons">
                         <span>
-                            <i className="fas fa-search fa-lg"></i>
+                            <Link to="#" className="custom-link">
+                                <i className="fas fa-search fa-lg"></i>
+                            </Link>
                         </span>
                         <span>
-                            <i className="fas fa-cog fa-lg"></i>
+                            <Link to="/Set" className="custom-link">
+                                <i className="fas fa-cog fa-lg"></i>
+                            </Link>
                         </span>
                     </div>
                 </header>
@@ -28,7 +32,7 @@ const More = () => {
                 <nav className="nav">
                     <ul className="nav-list">
                         <li className="tab-bar__btn">
-                            <Link to="/People" className="nav-tab">
+                            <Link to="/" className="nav-tab">
                                 <i className="fas fa-user fa-2x"></i>
                             </Link>
                         </li>
